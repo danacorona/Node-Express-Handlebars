@@ -1,3 +1,22 @@
 body {
-    background-color: #f19f00;
+    background-color:#cdd5b0;
 }
+
+h1 {
+    text-align: center;
+    color:#7caf50;
+}
+h2 {
+    color: #dca009;
+    font-weight: 700;
+}
+img {
+    max-width: 20%;
+    display: block;
+}
+li {
+    color: #593729;
+    margin: 5px;
+    text-decoration: none;
+}
+

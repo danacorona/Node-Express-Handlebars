@@ -4,20 +4,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     //Update the Devour State
-    const changeDevouredBtn = document.querySelectorAll('.change-devoured');
+    const changeDevouredBtns = document.querySelectorAll('.change-devoured');
 
-    if (changeDevouredBtn) {
-        changeDevouredBtn.forEach((button) => {
+    if (changeDevouredBtns) {
+        changeDevouredBtns.forEach((button) => {
             button.addEventListener('click', (e) => {
                 console.log('test');
             
                 const id = e.target.getAttribute('data-id');
+                console.log(id);
                 const newDevoured = e.target.getAttribute('data-newdevoured');
                 const newDevouredState = {
                     devoured: newDevoured,
                 };
 
-                fetch(`/api/burgers/:${id}`, {
+                fetch(`/api/burgers/${id}`, {
                     method: 'PUT',
                     headers: {
                         Accept: 'application/json',
@@ -46,6 +47,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
             const newBurger = {
                 burger_name: document.getElementById('bn').value.trim(),
+                devoured: document.getElementById('devoured').checked,
             };
 
             fetch('/api/burgers', {
