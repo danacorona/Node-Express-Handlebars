@@ -4,7 +4,7 @@
 ## Description
 Eat Da Burger is a restuarant app that lets users input the names of burgers that they would like to eat!
 
-You can view the deployed version [here](https://git.heroku.com/afternoon-reaches-38518.git)
+You can view the deployed version [here](https://afternoon-reaches-38518.herokuapp.com/)
 
 ***
 ## Screenshot
